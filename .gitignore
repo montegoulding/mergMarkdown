@@ -20,5 +20,4 @@ DerivedData
 *.rev
 *.mc
 # Binaries
-*.dll
-*.so
+binaries
