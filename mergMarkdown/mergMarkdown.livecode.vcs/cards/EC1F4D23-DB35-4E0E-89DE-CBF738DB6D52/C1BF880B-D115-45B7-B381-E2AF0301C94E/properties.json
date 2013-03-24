@@ -1,0 +1,20 @@
+{
+  "class": "com.runrev.engine.button",
+  "customPropertySets": {
+    "cREVGeneral": {
+      "revUniqueID": "1364082680943"
+    }
+  },
+  "properties": {
+    "hiliteBorder": "false",
+    "hilited": "true",
+    "layer": "11",
+    "name": "lax spacing",
+    "opaque": "false",
+    "rect": "812,10,922,36",
+    "showBorder": "false",
+    "style": "checkbox",
+    "textAlign": "left"
+  },
+  "uuid": "C1BF880B-D115-45B7-B381-E2AF0301C94E"
+}

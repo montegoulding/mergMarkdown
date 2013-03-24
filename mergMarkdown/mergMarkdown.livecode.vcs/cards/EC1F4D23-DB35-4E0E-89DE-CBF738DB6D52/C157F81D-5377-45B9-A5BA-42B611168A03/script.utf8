@@ -1,0 +1,5 @@
+on mouseUp
+   put mergMarkdownToXHTML(field "markdown",the hilite of btn "no_intra_emphasis",the hilite of btn "table", \
+         the hilite of btn "fenced code", the hilite of btn "autolink", the hilite of btn "strikethrough", the hilite of btn "space headers", \
+         the hilite of btn "superscript", the hilite of btn "lax spacing") into field "xhtml"
+end mouseUp

@@ -1,0 +1,6 @@
+[submodule "mergMarkdown/sundown"]
+	path = mergMarkdown/sundown
+	url = https://github.com/vmg/sundown.git
+[submodule "mergMarkdown/LCExternal"]
+	path = mergMarkdown/LCExternal
+	url = /Users/montegoulding/LCExternal

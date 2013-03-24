@@ -1,0 +1,321 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B20CAABF16FE5B4200117A54 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20CAABE16FE5B4200117A54 /* CoreFoundation.framework */; };
+		B20CAAC516FE5B4200117A54 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B20CAAC316FE5B4200117A54 /* InfoPlist.strings */; };
+		B20CAACD16FE5F7700117A54 /* external.c in Sources */ = {isa = PBXBuildFile; fileRef = B20CAACC16FE5F7700117A54 /* external.c */; };
+		B20CAAD216FE5FA200117A54 /* autolink.c in Sources */ = {isa = PBXBuildFile; fileRef = B20CAACE16FE5FA200117A54 /* autolink.c */; };
+		B20CAAD316FE5FA200117A54 /* buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = B20CAACF16FE5FA200117A54 /* buffer.c */; };
+		B20CAAD416FE5FA200117A54 /* markdown.c in Sources */ = {isa = PBXBuildFile; fileRef = B20CAAD016FE5FA200117A54 /* markdown.c */; };
+		B20CAAD516FE5FA200117A54 /* stack.c in Sources */ = {isa = PBXBuildFile; fileRef = B20CAAD116FE5FA200117A54 /* stack.c */; };
+		B20CAADA16FE5FBF00117A54 /* houdini_href_e.c in Sources */ = {isa = PBXBuildFile; fileRef = B20CAAD616FE5FBF00117A54 /* houdini_href_e.c */; };
+		B20CAADB16FE5FBF00117A54 /* houdini_html_e.c in Sources */ = {isa = PBXBuildFile; fileRef = B20CAAD716FE5FBF00117A54 /* houdini_html_e.c */; };
+		B20CAADC16FE5FBF00117A54 /* html_smartypants.c in Sources */ = {isa = PBXBuildFile; fileRef = B20CAAD816FE5FBF00117A54 /* html_smartypants.c */; };
+		B20CAADD16FE5FBF00117A54 /* html.c in Sources */ = {isa = PBXBuildFile; fileRef = B20CAAD916FE5FBF00117A54 /* html.c */; };
+		B20CAADF16FE5FEB00117A54 /* mergMarkdown.c in Sources */ = {isa = PBXBuildFile; fileRef = B20CAADE16FE5FEB00117A54 /* mergMarkdown.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B20CAABB16FE5B4200117A54 /* mergMarkdown.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mergMarkdown.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		B20CAABE16FE5B4200117A54 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		B20CAAC216FE5B4200117A54 /* mergMarkdown-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "mergMarkdown-Info.plist"; sourceTree = "<group>"; };
+		B20CAAC416FE5B4200117A54 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B20CAAC616FE5B4200117A54 /* mergMarkdown-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mergMarkdown-Prefix.pch"; sourceTree = "<group>"; };
+		B20CAACC16FE5F7700117A54 /* external.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = external.c; path = LCExternal/external.c; sourceTree = "<group>"; };
+		B20CAACE16FE5FA200117A54 /* autolink.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = autolink.c; path = sundown/src/autolink.c; sourceTree = "<group>"; };
+		B20CAACF16FE5FA200117A54 /* buffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = buffer.c; path = sundown/src/buffer.c; sourceTree = "<group>"; };
+		B20CAAD016FE5FA200117A54 /* markdown.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = markdown.c; path = sundown/src/markdown.c; sourceTree = "<group>"; };
+		B20CAAD116FE5FA200117A54 /* stack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = stack.c; path = sundown/src/stack.c; sourceTree = "<group>"; };
+		B20CAAD616FE5FBF00117A54 /* houdini_href_e.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = houdini_href_e.c; path = sundown/html/houdini_href_e.c; sourceTree = "<group>"; };
+		B20CAAD716FE5FBF00117A54 /* houdini_html_e.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = houdini_html_e.c; path = sundown/html/houdini_html_e.c; sourceTree = "<group>"; };
+		B20CAAD816FE5FBF00117A54 /* html_smartypants.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = html_smartypants.c; path = sundown/html/html_smartypants.c; sourceTree = "<group>"; };
+		B20CAAD916FE5FBF00117A54 /* html.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = html.c; path = sundown/html/html.c; sourceTree = "<group>"; };
+		B20CAADE16FE5FEB00117A54 /* mergMarkdown.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mergMarkdown.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B20CAAB816FE5B4200117A54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B20CAABF16FE5B4200117A54 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B20CAAB016FE5B4200117A54 = {
+			isa = PBXGroup;
+			children = (
+				B20CAAC016FE5B4200117A54 /* mergMarkdown */,
+				B20CAABD16FE5B4200117A54 /* Frameworks */,
+				B20CAABC16FE5B4200117A54 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B20CAABC16FE5B4200117A54 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B20CAABB16FE5B4200117A54 /* mergMarkdown.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B20CAABD16FE5B4200117A54 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B20CAABE16FE5B4200117A54 /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B20CAAC016FE5B4200117A54 /* mergMarkdown */ = {
+			isa = PBXGroup;
+			children = (
+				B20CAAD616FE5FBF00117A54 /* houdini_href_e.c */,
+				B20CAAD716FE5FBF00117A54 /* houdini_html_e.c */,
+				B20CAAD816FE5FBF00117A54 /* html_smartypants.c */,
+				B20CAAD916FE5FBF00117A54 /* html.c */,
+				B20CAACE16FE5FA200117A54 /* autolink.c */,
+				B20CAACF16FE5FA200117A54 /* buffer.c */,
+				B20CAAD016FE5FA200117A54 /* markdown.c */,
+				B20CAAD116FE5FA200117A54 /* stack.c */,
+				B20CAACC16FE5F7700117A54 /* external.c */,
+				B20CAAC116FE5B4200117A54 /* Supporting Files */,
+				B20CAADE16FE5FEB00117A54 /* mergMarkdown.c */,
+			);
+			path = mergMarkdown;
+			sourceTree = "<group>";
+		};
+		B20CAAC116FE5B4200117A54 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B20CAAC216FE5B4200117A54 /* mergMarkdown-Info.plist */,
+				B20CAAC316FE5B4200117A54 /* InfoPlist.strings */,
+				B20CAAC616FE5B4200117A54 /* mergMarkdown-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B20CAABA16FE5B4200117A54 /* mergMarkdown */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B20CAAC916FE5B4200117A54 /* Build configuration list for PBXNativeTarget "mergMarkdown" */;
+			buildPhases = (
+				B20CAAB716FE5B4200117A54 /* Sources */,
+				B20CAAB816FE5B4200117A54 /* Frameworks */,
+				B20CAAB916FE5B4200117A54 /* Resources */,
+				B20CAAE016FE68DE00117A54 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mergMarkdown;
+			productName = mergMarkdown;
+			productReference = B20CAABB16FE5B4200117A54 /* mergMarkdown.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B20CAAB216FE5B4200117A54 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = mergExt;
+			};
+			buildConfigurationList = B20CAAB516FE5B4200117A54 /* Build configuration list for PBXProject "mergMarkdown" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B20CAAB016FE5B4200117A54;
+			productRefGroup = B20CAABC16FE5B4200117A54 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B20CAABA16FE5B4200117A54 /* mergMarkdown */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B20CAAB916FE5B4200117A54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B20CAAC516FE5B4200117A54 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B20CAAE016FE68DE00117A54 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp -r \"$BUILT_PRODUCTS_DIR/$EXECUTABLE_NAME.bundle\" \"/Users/montegoulding/Dropbox/LiveCode/Externals\"\nopen \"$SRCROOT/$EXECUTABLE_NAME/$EXECUTABLE_NAME.livecode\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B20CAAB716FE5B4200117A54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B20CAACD16FE5F7700117A54 /* external.c in Sources */,
+				B20CAAD216FE5FA200117A54 /* autolink.c in Sources */,
+				B20CAAD316FE5FA200117A54 /* buffer.c in Sources */,
+				B20CAAD416FE5FA200117A54 /* markdown.c in Sources */,
+				B20CAAD516FE5FA200117A54 /* stack.c in Sources */,
+				B20CAADA16FE5FBF00117A54 /* houdini_href_e.c in Sources */,
+				B20CAADB16FE5FBF00117A54 /* houdini_html_e.c in Sources */,
+				B20CAADC16FE5FBF00117A54 /* html_smartypants.c in Sources */,
+				B20CAADD16FE5FBF00117A54 /* html.c in Sources */,
+				B20CAADF16FE5FEB00117A54 /* mergMarkdown.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B20CAAC316FE5B4200117A54 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B20CAAC416FE5B4200117A54 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B20CAAC716FE5B4200117A54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					$SRCROOT/LCExternal,
+					"$SRCROOT/sundown/**",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B20CAAC816FE5B4200117A54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					$SRCROOT/LCExternal,
+					"$SRCROOT/sundown/**",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B20CAACA16FE5B4200117A54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mergMarkdown/mergMarkdown-Prefix.pch";
+				INFOPLIST_FILE = "mergMarkdown/mergMarkdown-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		B20CAACB16FE5B4200117A54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "mergMarkdown/mergMarkdown-Prefix.pch";
+				INFOPLIST_FILE = "mergMarkdown/mergMarkdown-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B20CAAB516FE5B4200117A54 /* Build configuration list for PBXProject "mergMarkdown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B20CAAC716FE5B4200117A54 /* Debug */,
+				B20CAAC816FE5B4200117A54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B20CAAC916FE5B4200117A54 /* Build configuration list for PBXNativeTarget "mergMarkdown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B20CAACA16FE5B4200117A54 /* Debug */,
+				B20CAACB16FE5B4200117A54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B20CAAB216FE5B4200117A54 /* Project object */;
+}
