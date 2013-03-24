@@ -174,7 +174,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cp -r \"$BUILT_PRODUCTS_DIR/$EXECUTABLE_NAME.bundle\" \"/Users/montegoulding/Dropbox/LiveCode/Externals\"\ncp -r \"$BUILT_PRODUCTS_DIR/$EXECUTABLE_NAME.bundle\" \"$SRCROOT/binaries\"\nopen \"$SRCROOT/$EXECUTABLE_NAME/$EXECUTABLE_NAME.livecode\"";
+			shellScript = "cp -r \"$BUILT_PRODUCTS_DIR/$EXECUTABLE_NAME.bundle\" \"/Users/montegoulding/Dropbox/LiveCode/Externals\"\ncp -r \"$BUILT_PRODUCTS_DIR/$EXECUTABLE_NAME.bundle\" \"$SRCROOT/binaries\"\ncp \"$SRCROOT/$EXECUTABLE_NAME/$EXECUTABLE_NAME.livecode\" \"$SRCROOT/binaries/$EXECUTABLE_NAME.livecode\"\nopen \"$SRCROOT/$EXECUTABLE_NAME/$EXECUTABLE_NAME.livecode\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
