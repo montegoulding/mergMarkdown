@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		B20CAABF16FE5B4200117A54 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B20CAABE16FE5B4200117A54 /* CoreFoundation.framework */; };
 		B20CAAC516FE5B4200117A54 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B20CAAC316FE5B4200117A54 /* InfoPlist.strings */; };
-		B20CAACD16FE5F7700117A54 /* external.c in Sources */ = {isa = PBXBuildFile; fileRef = B20CAACC16FE5F7700117A54 /* external.c */; };
 		B20CAAD216FE5FA200117A54 /* autolink.c in Sources */ = {isa = PBXBuildFile; fileRef = B20CAACE16FE5FA200117A54 /* autolink.c */; };
 		B20CAAD316FE5FA200117A54 /* buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = B20CAACF16FE5FA200117A54 /* buffer.c */; };
 		B20CAAD416FE5FA200117A54 /* markdown.c in Sources */ = {isa = PBXBuildFile; fileRef = B20CAAD016FE5FA200117A54 /* markdown.c */; };
@@ -19,6 +18,7 @@
 		B20CAADC16FE5FBF00117A54 /* html_smartypants.c in Sources */ = {isa = PBXBuildFile; fileRef = B20CAAD816FE5FBF00117A54 /* html_smartypants.c */; };
 		B20CAADD16FE5FBF00117A54 /* html.c in Sources */ = {isa = PBXBuildFile; fileRef = B20CAAD916FE5FBF00117A54 /* html.c */; };
 		B20CAADF16FE5FEB00117A54 /* mergMarkdown.c in Sources */ = {isa = PBXBuildFile; fileRef = B20CAADE16FE5FEB00117A54 /* mergMarkdown.c */; };
+		B243C451172AABDE0068EC91 /* external.c in Sources */ = {isa = PBXBuildFile; fileRef = B243C450172AABDE0068EC91 /* external.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,6 @@
 		B20CAAC216FE5B4200117A54 /* mergMarkdown-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "mergMarkdown-Info.plist"; sourceTree = "<group>"; };
 		B20CAAC416FE5B4200117A54 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B20CAAC616FE5B4200117A54 /* mergMarkdown-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mergMarkdown-Prefix.pch"; sourceTree = "<group>"; };
-		B20CAACC16FE5F7700117A54 /* external.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = external.c; path = LCExternal/external.c; sourceTree = "<group>"; };
 		B20CAACE16FE5FA200117A54 /* autolink.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = autolink.c; path = sundown/src/autolink.c; sourceTree = "<group>"; };
 		B20CAACF16FE5FA200117A54 /* buffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = buffer.c; path = sundown/src/buffer.c; sourceTree = "<group>"; };
 		B20CAAD016FE5FA200117A54 /* markdown.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = markdown.c; path = sundown/src/markdown.c; sourceTree = "<group>"; };
@@ -37,6 +36,7 @@
 		B20CAAD816FE5FBF00117A54 /* html_smartypants.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = html_smartypants.c; path = sundown/html/html_smartypants.c; sourceTree = "<group>"; };
 		B20CAAD916FE5FBF00117A54 /* html.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = html.c; path = sundown/html/html.c; sourceTree = "<group>"; };
 		B20CAADE16FE5FEB00117A54 /* mergMarkdown.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mergMarkdown.c; sourceTree = "<group>"; };
+		B243C450172AABDE0068EC91 /* external.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = external.c; path = external/external.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +79,7 @@
 		B20CAAC016FE5B4200117A54 /* mergMarkdown */ = {
 			isa = PBXGroup;
 			children = (
+				B243C450172AABDE0068EC91 /* external.c */,
 				B20CAAD616FE5FBF00117A54 /* houdini_href_e.c */,
 				B20CAAD716FE5FBF00117A54 /* houdini_html_e.c */,
 				B20CAAD816FE5FBF00117A54 /* html_smartypants.c */,
@@ -87,7 +88,6 @@
 				B20CAACF16FE5FA200117A54 /* buffer.c */,
 				B20CAAD016FE5FA200117A54 /* markdown.c */,
 				B20CAAD116FE5FA200117A54 /* stack.c */,
-				B20CAACC16FE5F7700117A54 /* external.c */,
 				B20CAAC116FE5B4200117A54 /* Supporting Files */,
 				B20CAADE16FE5FEB00117A54 /* mergMarkdown.c */,
 			);
@@ -183,7 +183,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B20CAACD16FE5F7700117A54 /* external.c in Sources */,
 				B20CAAD216FE5FA200117A54 /* autolink.c in Sources */,
 				B20CAAD316FE5FA200117A54 /* buffer.c in Sources */,
 				B20CAAD416FE5FA200117A54 /* markdown.c in Sources */,
@@ -193,6 +192,7 @@
 				B20CAADC16FE5FBF00117A54 /* html_smartypants.c in Sources */,
 				B20CAADD16FE5FBF00117A54 /* html.c in Sources */,
 				B20CAADF16FE5FEB00117A54 /* mergMarkdown.c in Sources */,
+				B243C451172AABDE0068EC91 /* external.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +275,10 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "mergMarkdown/mergMarkdown-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					$SRCROOT/external,
+					"$SRCROOT/sundown/**",
+				);
 				INFOPLIST_FILE = "mergMarkdown/mergMarkdown-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -288,6 +292,10 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "mergMarkdown/mergMarkdown-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					$SRCROOT/external,
+					"$SRCROOT/sundown/**",
+				);
 				INFOPLIST_FILE = "mergMarkdown/mergMarkdown-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
 				PRODUCT_NAME = "$(TARGET_NAME)";
