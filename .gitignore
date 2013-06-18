@@ -22,3 +22,4 @@ DerivedData
 # Binaries
 binaries
 *.zip
+_build

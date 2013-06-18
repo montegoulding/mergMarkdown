@@ -18,8 +18,41 @@
 		B20CAADC16FE5FBF00117A54 /* html_smartypants.c in Sources */ = {isa = PBXBuildFile; fileRef = B20CAAD816FE5FBF00117A54 /* html_smartypants.c */; };
 		B20CAADD16FE5FBF00117A54 /* html.c in Sources */ = {isa = PBXBuildFile; fileRef = B20CAAD916FE5FBF00117A54 /* html.c */; };
 		B20CAADF16FE5FEB00117A54 /* mergMarkdown.c in Sources */ = {isa = PBXBuildFile; fileRef = B20CAADE16FE5FEB00117A54 /* mergMarkdown.c */; };
+		B22698CA176C18A600F9A4BB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B22698C9176C18A600F9A4BB /* Foundation.framework */; };
+		B22698D6176C1C0100F9A4BB /* mergMarkdown.c in Sources */ = {isa = PBXBuildFile; fileRef = B20CAADE16FE5FEB00117A54 /* mergMarkdown.c */; };
+		B22698D7176C1C0B00F9A4BB /* external.c in Sources */ = {isa = PBXBuildFile; fileRef = B243C450172AABDE0068EC91 /* external.c */; };
+		B22698D8176C1C0B00F9A4BB /* houdini_href_e.c in Sources */ = {isa = PBXBuildFile; fileRef = B20CAAD616FE5FBF00117A54 /* houdini_href_e.c */; };
+		B22698D9176C1C0B00F9A4BB /* houdini_html_e.c in Sources */ = {isa = PBXBuildFile; fileRef = B20CAAD716FE5FBF00117A54 /* houdini_html_e.c */; };
+		B22698DA176C1C0B00F9A4BB /* html_smartypants.c in Sources */ = {isa = PBXBuildFile; fileRef = B20CAAD816FE5FBF00117A54 /* html_smartypants.c */; };
+		B22698DB176C1C0B00F9A4BB /* html.c in Sources */ = {isa = PBXBuildFile; fileRef = B20CAAD916FE5FBF00117A54 /* html.c */; };
+		B22698DC176C1C0B00F9A4BB /* autolink.c in Sources */ = {isa = PBXBuildFile; fileRef = B20CAACE16FE5FA200117A54 /* autolink.c */; };
+		B22698DD176C1C0B00F9A4BB /* buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = B20CAACF16FE5FA200117A54 /* buffer.c */; };
+		B22698DE176C1C0B00F9A4BB /* markdown.c in Sources */ = {isa = PBXBuildFile; fileRef = B20CAAD016FE5FA200117A54 /* markdown.c */; };
+		B22698DF176C1C0B00F9A4BB /* stack.c in Sources */ = {isa = PBXBuildFile; fileRef = B20CAAD116FE5FA200117A54 /* stack.c */; };
 		B243C451172AABDE0068EC91 /* external.c in Sources */ = {isa = PBXBuildFile; fileRef = B243C450172AABDE0068EC91 /* external.c */; };
+		B2B46617176EE9A2008B07AB /* external.c in Sources */ = {isa = PBXBuildFile; fileRef = B243C450172AABDE0068EC91 /* external.c */; };
+		B2B46618176EE9A2008B07AB /* houdini_href_e.c in Sources */ = {isa = PBXBuildFile; fileRef = B20CAAD616FE5FBF00117A54 /* houdini_href_e.c */; };
+		B2B46619176EE9A2008B07AB /* houdini_html_e.c in Sources */ = {isa = PBXBuildFile; fileRef = B20CAAD716FE5FBF00117A54 /* houdini_html_e.c */; };
+		B2B4661A176EE9A2008B07AB /* html_smartypants.c in Sources */ = {isa = PBXBuildFile; fileRef = B20CAAD816FE5FBF00117A54 /* html_smartypants.c */; };
+		B2B4661B176EE9A2008B07AB /* html.c in Sources */ = {isa = PBXBuildFile; fileRef = B20CAAD916FE5FBF00117A54 /* html.c */; };
+		B2B4661C176EE9A2008B07AB /* autolink.c in Sources */ = {isa = PBXBuildFile; fileRef = B20CAACE16FE5FA200117A54 /* autolink.c */; };
+		B2B4661D176EE9A2008B07AB /* buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = B20CAACF16FE5FA200117A54 /* buffer.c */; };
+		B2B4661E176EE9A2008B07AB /* markdown.c in Sources */ = {isa = PBXBuildFile; fileRef = B20CAAD016FE5FA200117A54 /* markdown.c */; };
+		B2B4661F176EE9A2008B07AB /* stack.c in Sources */ = {isa = PBXBuildFile; fileRef = B20CAAD116FE5FA200117A54 /* stack.c */; };
+		B2B46620176EE9A2008B07AB /* mergMarkdown.c in Sources */ = {isa = PBXBuildFile; fileRef = B20CAADE16FE5FEB00117A54 /* mergMarkdown.c */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B22698C6176C18A600F9A4BB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		B20CAABB16FE5B4200117A54 /* mergMarkdown.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mergMarkdown.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,7 +69,10 @@
 		B20CAAD816FE5FBF00117A54 /* html_smartypants.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = html_smartypants.c; path = sundown/html/html_smartypants.c; sourceTree = "<group>"; };
 		B20CAAD916FE5FBF00117A54 /* html.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = html.c; path = sundown/html/html.c; sourceTree = "<group>"; };
 		B20CAADE16FE5FEB00117A54 /* mergMarkdown.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mergMarkdown.c; sourceTree = "<group>"; };
+		B22698C8176C18A600F9A4BB /* libmergMarkdown.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libmergMarkdown.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B22698C9176C18A600F9A4BB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B243C450172AABDE0068EC91 /* external.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = external.c; path = external/external.c; sourceTree = "<group>"; };
+		B2B46612176EE8E9008B07AB /* mergMarkdown.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = mergMarkdown.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +81,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				B20CAABF16FE5B4200117A54 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B22698C5176C18A600F9A4BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B22698CA176C18A600F9A4BB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2B4660F176EE8E9008B07AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +115,8 @@
 			isa = PBXGroup;
 			children = (
 				B20CAABB16FE5B4200117A54 /* mergMarkdown.bundle */,
+				B22698C8176C18A600F9A4BB /* libmergMarkdown.a */,
+				B2B46612176EE8E9008B07AB /* mergMarkdown.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -72,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				B20CAABE16FE5B4200117A54 /* CoreFoundation.framework */,
+				B22698C9176C18A600F9A4BB /* Foundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -106,6 +160,16 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		B2B46610176EE8E9008B07AB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		B20CAABA16FE5B4200117A54 /* mergMarkdown */ = {
 			isa = PBXNativeTarget;
@@ -124,6 +188,42 @@
 			productName = mergMarkdown;
 			productReference = B20CAABB16FE5B4200117A54 /* mergMarkdown.bundle */;
 			productType = "com.apple.product-type.bundle";
+		};
+		B22698C7176C18A600F9A4BB /* mergMarkdown-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B22698D4176C18A700F9A4BB /* Build configuration list for PBXNativeTarget "mergMarkdown-iOS" */;
+			buildPhases = (
+				B22698C4176C18A600F9A4BB /* Sources */,
+				B22698C5176C18A600F9A4BB /* Frameworks */,
+				B22698C6176C18A600F9A4BB /* CopyFiles */,
+				B22698D5176C191900F9A4BB /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "mergMarkdown-iOS";
+			productName = "mergMarkdown-iOS";
+			productReference = B22698C8176C18A600F9A4BB /* libmergMarkdown.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B2B46611176EE8E9008B07AB /* mergMarkdown-Server */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2B46615176EE8E9008B07AB /* Build configuration list for PBXNativeTarget "mergMarkdown-Server" */;
+			buildPhases = (
+				B2B4660E176EE8E9008B07AB /* Sources */,
+				B2B4660F176EE8E9008B07AB /* Frameworks */,
+				B2B46610176EE8E9008B07AB /* Headers */,
+				B2B46616176EE954008B07AB /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "mergMarkdown-Server";
+			productName = "mergMarkdown-Server";
+			productReference = B2B46612176EE8E9008B07AB /* mergMarkdown.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
@@ -147,6 +247,8 @@
 			projectRoot = "";
 			targets = (
 				B20CAABA16FE5B4200117A54 /* mergMarkdown */,
+				B22698C7176C18A600F9A4BB /* mergMarkdown-iOS */,
+				B2B46611176EE8E9008B07AB /* mergMarkdown-Server */,
 			);
 		};
 /* End PBXProject section */
@@ -176,6 +278,32 @@
 			shellPath = /bin/sh;
 			shellScript = "cp -r \"$BUILT_PRODUCTS_DIR/$EXECUTABLE_NAME.bundle\" \"/Users/montegoulding/Dropbox/LiveCode/Externals\"\ncp -r \"$BUILT_PRODUCTS_DIR/$EXECUTABLE_NAME.bundle\" \"$SRCROOT/binaries\"\ncp \"$SRCROOT/$EXECUTABLE_NAME/$EXECUTABLE_NAME.livecode\" \"$SRCROOT/binaries/$EXECUTABLE_NAME.livecode\"\nopen \"$SRCROOT/$EXECUTABLE_NAME/$EXECUTABLE_NAME.livecode\"";
 		};
+		B22698D5176C191900F9A4BB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export SYMBOLS=_getXtable\nsh \"$LIVECODE_SDKROOT/tools/lclink.sh\"";
+		};
+		B2B46616176EE954008B07AB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp -r \"$BUILT_PRODUCTS_DIR/$EXECUTABLE_NAME\" \"$SRCROOT/binaries\"";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -193,6 +321,40 @@
 				B20CAADD16FE5FBF00117A54 /* html.c in Sources */,
 				B20CAADF16FE5FEB00117A54 /* mergMarkdown.c in Sources */,
 				B243C451172AABDE0068EC91 /* external.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B22698C4176C18A600F9A4BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B22698D6176C1C0100F9A4BB /* mergMarkdown.c in Sources */,
+				B22698D7176C1C0B00F9A4BB /* external.c in Sources */,
+				B22698D8176C1C0B00F9A4BB /* houdini_href_e.c in Sources */,
+				B22698D9176C1C0B00F9A4BB /* houdini_html_e.c in Sources */,
+				B22698DA176C1C0B00F9A4BB /* html_smartypants.c in Sources */,
+				B22698DB176C1C0B00F9A4BB /* html.c in Sources */,
+				B22698DC176C1C0B00F9A4BB /* autolink.c in Sources */,
+				B22698DD176C1C0B00F9A4BB /* buffer.c in Sources */,
+				B22698DE176C1C0B00F9A4BB /* markdown.c in Sources */,
+				B22698DF176C1C0B00F9A4BB /* stack.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2B4660E176EE8E9008B07AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2B46617176EE9A2008B07AB /* external.c in Sources */,
+				B2B46618176EE9A2008B07AB /* houdini_href_e.c in Sources */,
+				B2B46619176EE9A2008B07AB /* houdini_html_e.c in Sources */,
+				B2B4661A176EE9A2008B07AB /* html_smartypants.c in Sources */,
+				B2B4661B176EE9A2008B07AB /* html.c in Sources */,
+				B2B4661C176EE9A2008B07AB /* autolink.c in Sources */,
+				B2B4661D176EE9A2008B07AB /* buffer.c in Sources */,
+				B2B4661E176EE9A2008B07AB /* markdown.c in Sources */,
+				B2B4661F176EE9A2008B07AB /* stack.c in Sources */,
+				B2B46620176EE9A2008B07AB /* mergMarkdown.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +465,75 @@
 			};
 			name = Release;
 		};
+		B22698D2176C18A700F9A4BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = armv7;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				DSTROOT = /tmp/mergMarkdown_iOS.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIVECODE_SDKROOT = "$(USER_LIBRARY_DIR)/Application Support/RunRev/Components/LiveCodeSDK";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = mergMarkdown;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B22698D3176C18A700F9A4BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = armv7;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				DSTROOT = /tmp/mergMarkdown_iOS.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				LIVECODE_SDKROOT = "$(USER_LIBRARY_DIR)/Application Support/RunRev/Components/LiveCodeSDK";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = mergMarkdown;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B2B46613176EE8E9008B07AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				EXECUTABLE_PREFIX = "";
+				MACH_O_TYPE = mh_dylib;
+				PRODUCT_NAME = mergMarkdown;
+			};
+			name = Debug;
+		};
+		B2B46614176EE8E9008B07AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				EXECUTABLE_PREFIX = "";
+				MACH_O_TYPE = mh_dylib;
+				PRODUCT_NAME = mergMarkdown;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -323,6 +554,23 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		B22698D4176C18A700F9A4BB /* Build configuration list for PBXNativeTarget "mergMarkdown-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B22698D2176C18A700F9A4BB /* Debug */,
+				B22698D3176C18A700F9A4BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B2B46615176EE8E9008B07AB /* Build configuration list for PBXNativeTarget "mergMarkdown-Server" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B2B46613176EE8E9008B07AB /* Debug */,
+				B2B46614176EE8E9008B07AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
