@@ -72,7 +72,7 @@
 		B22698C8176C18A600F9A4BB /* libmergMarkdown.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libmergMarkdown.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B22698C9176C18A600F9A4BB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B243C450172AABDE0068EC91 /* external.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = external.c; path = external/external.c; sourceTree = "<group>"; };
-		B2B46612176EE8E9008B07AB /* mergMarkdown.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = mergMarkdown.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2B46612176EE8E9008B07AB /* mergMarkdown.dylib */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = mergMarkdown.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,7 +116,7 @@
 			children = (
 				B20CAABB16FE5B4200117A54 /* mergMarkdown.bundle */,
 				B22698C8176C18A600F9A4BB /* libmergMarkdown.a */,
-				B2B46612176EE8E9008B07AB /* mergMarkdown.a */,
+				B2B46612176EE8E9008B07AB /* mergMarkdown.dylib */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -171,9 +171,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		B20CAABA16FE5B4200117A54 /* mergMarkdown */ = {
+		B20CAABA16FE5B4200117A54 /* mergMarkdown-OSX */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B20CAAC916FE5B4200117A54 /* Build configuration list for PBXNativeTarget "mergMarkdown" */;
+			buildConfigurationList = B20CAAC916FE5B4200117A54 /* Build configuration list for PBXNativeTarget "mergMarkdown-OSX" */;
 			buildPhases = (
 				B20CAAB716FE5B4200117A54 /* Sources */,
 				B20CAAB816FE5B4200117A54 /* Frameworks */,
@@ -184,7 +184,7 @@
 			);
 			dependencies = (
 			);
-			name = mergMarkdown;
+			name = "mergMarkdown-OSX";
 			productName = mergMarkdown;
 			productReference = B20CAABB16FE5B4200117A54 /* mergMarkdown.bundle */;
 			productType = "com.apple.product-type.bundle";
@@ -222,7 +222,7 @@
 			);
 			name = "mergMarkdown-Server";
 			productName = "mergMarkdown-Server";
-			productReference = B2B46612176EE8E9008B07AB /* mergMarkdown.a */;
+			productReference = B2B46612176EE8E9008B07AB /* mergMarkdown.dylib */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -246,7 +246,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B20CAABA16FE5B4200117A54 /* mergMarkdown */,
+				B20CAABA16FE5B4200117A54 /* mergMarkdown-OSX */,
 				B22698C7176C18A600F9A4BB /* mergMarkdown-iOS */,
 				B2B46611176EE8E9008B07AB /* mergMarkdown-Server */,
 			);
@@ -276,7 +276,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cp -r \"$BUILT_PRODUCTS_DIR/$EXECUTABLE_NAME.bundle\" \"/Users/montegoulding/Dropbox/LiveCode/Externals\"\ncp -r \"$BUILT_PRODUCTS_DIR/$EXECUTABLE_NAME.bundle\" \"$SRCROOT/binaries\"\ncp \"$SRCROOT/$EXECUTABLE_NAME/$EXECUTABLE_NAME.livecode\" \"$SRCROOT/binaries/$EXECUTABLE_NAME.livecode\"\nopen \"$SRCROOT/$EXECUTABLE_NAME/$EXECUTABLE_NAME.livecode\"";
+			shellScript = "cp -r \"$BUILT_PRODUCTS_DIR/$EXECUTABLE_NAME.bundle\" \"/Users/montegoulding/Dropbox/LiveCode/Externals\"\ncp -r \"$BUILT_PRODUCTS_DIR/$EXECUTABLE_NAME.bundle\" \"$SRCROOT/binaries\"\ncp -r \"$BUILT_PRODUCTS_DIR/$EXECUTABLE_NAME.bundle\" \"$SRCROOT/distribute\"\ncp \"$SRCROOT/$EXECUTABLE_NAME/$EXECUTABLE_NAME.livecode\" \"$SRCROOT/binaries/$EXECUTABLE_NAME.livecode\"\nopen \"$SRCROOT/$EXECUTABLE_NAME/$EXECUTABLE_NAME.livecode\"";
 		};
 		B22698D5176C191900F9A4BB /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -302,7 +302,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cp -r \"$BUILT_PRODUCTS_DIR/$EXECUTABLE_NAME\" \"$SRCROOT/binaries\"";
+			shellScript = "cp -r \"$BUILT_PRODUCTS_DIR/$EXECUTABLE_NAME\" \"$SRCROOT/binaries\"\ncp -r \"$BUILT_PRODUCTS_DIR/$EXECUTABLE_NAME\" \"$SRCROOT/distribute\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -443,7 +443,7 @@
 				);
 				INFOPLIST_FILE = "mergMarkdown/mergMarkdown-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = mergMarkdown;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -460,7 +460,7 @@
 				);
 				INFOPLIST_FILE = "mergMarkdown/mergMarkdown-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = mergMarkdown;
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
@@ -514,6 +514,7 @@
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				EXECUTABLE_EXTENSION = dylib;
 				EXECUTABLE_PREFIX = "";
 				MACH_O_TYPE = mh_dylib;
 				PRODUCT_NAME = mergMarkdown;
@@ -528,6 +529,7 @@
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				EXECUTABLE_EXTENSION = dylib;
 				EXECUTABLE_PREFIX = "";
 				MACH_O_TYPE = mh_dylib;
 				PRODUCT_NAME = mergMarkdown;
@@ -546,7 +548,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B20CAAC916FE5B4200117A54 /* Build configuration list for PBXNativeTarget "mergMarkdown" */ = {
+		B20CAAC916FE5B4200117A54 /* Build configuration list for PBXNativeTarget "mergMarkdown-OSX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B20CAACA16FE5B4200117A54 /* Debug */,
@@ -571,6 +573,7 @@
 				B2B46614176EE8E9008B07AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

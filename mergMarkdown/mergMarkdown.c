@@ -95,7 +95,7 @@ LIVECODE_FUNCTION(mergMarkdownToXHTML)
     /* performing markdown parsing */
 	tOutputBuffer = bufnew(OUTPUT_UNIT);
     
-	sdhtml_renderer(&tCallbacks, &tOptions, 0);
+	sdhtml_renderer(&tCallbacks, &tOptions, HTML_USE_XHTML);
 	tMarkdown = sd_markdown_new(tExtensions, 16, &tCallbacks, &tOptions);
     
 	sd_markdown_render(tOutputBuffer, (const uint8_t *)p_arguments[0], strlen(p_arguments[0]), tMarkdown);
