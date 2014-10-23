@@ -26,3 +26,5 @@ _build
 build
 distribute
 buildlog.txt
+*.dll
+*.xccheckout
