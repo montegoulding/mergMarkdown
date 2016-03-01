@@ -28,3 +28,4 @@ distribute
 buildlog.txt
 *.dll
 *.xccheckout
+*.so
