@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "C9EABAC25F8C81075A49E5CCDF17CC13E224EE17",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "9635D08B964B59C48EA8E6805E0CB50B3BAF24BE" : 0,
+    "C9EABAC25F8C81075A49E5CCDF17CC13E224EE17" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D92D38DD-A0DD-481F-A698-B058F57FAB95",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "9635D08B964B59C48EA8E6805E0CB50B3BAF24BE" : "mergMarkdownmergMarkdown\/sundown",
+    "C9EABAC25F8C81075A49E5CCDF17CC13E224EE17" : "mergMarkdown"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "mergMarkdown",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "mergMarkdown.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/vmg\/sundown.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9635D08B964B59C48EA8E6805E0CB50B3BAF24BE"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/montegoulding\/mergMarkdown.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C9EABAC25F8C81075A49E5CCDF17CC13E224EE17"
+    }
+  ]
+}
