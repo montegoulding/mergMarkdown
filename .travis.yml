@@ -1,0 +1,11 @@
+language: c
+sudo: false
+before_script: mkdir binaries
+script: make mergMarkdown-x64.so
+deploy:
+  provider: releases
+  api_key:
+    secure: 7rskNJLV3xIjGbucGZAJzBnm6pBYfNy1FLQQ9l+nF8AShC37pjfQB3/djQIE2A6kkVsI0s+guio3gy6lWd7HNa259K3Vw6MZGvYA8DVE/XeYCUa/8CllRfWTt9FgzBC3NeVzZyC0pGTD8lpVDqPLSRb9Ljml92SYDUQD8dmwyC3UTBZRMIecF6jniIijcFtJjJDZeFNM6EqYSJwmdEVEp1BQjLsjGGunsxljJ8lB40eKp9HVmNReqaYY/OTKMq2FbA27G7GbEtLoCBP1rzVL9mCeOYnJaL+KmcxyFLkoXlxaIq/N+azSh4Te1wqZWuBw8s7reZAby6YqKzQAOPhc5sMnvkZwESoEpF+ddheTAYxRcryLy5IkrFlFXYeYuQJIesAtU10x57Iilb9wxH3yVPI18QJMb37QWlRRjmRmqtRaFar3C6OviIC1KL/MT44PqdufjSLlhTdU1rq0GM9o3Lq7TQK09uyb0saTsSwCU5tgBski5h+Yr/MDj8H+9TfLv25OIhANSGc0i+TvdfaLCFrLjMLTD7eqXWF7pF1JqWBm43hyOrvhFWOIPdv0HtVECoc5XfJmmVHplQ/xiiLzSaTQoK3zc+W7gL6rrlS6taCwSO8u/Jf5I6PUYWuNUKyjxvHRC7kImy2d25rUgKt2vSZm1mjtTzngzgFUYHyNpT4=
+  file: binaries/mergMarkdown-x64.so
+  on:
+    repo: montegoulding/mergMarkdown
