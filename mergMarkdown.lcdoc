@@ -21,6 +21,11 @@ Syntax: mergMarkdownToHTML(<pMarkdown>, [<pNoIntraEmphasis>, <pTable>, <pFencedC
 
 Summary:  Returns the XHTML translation of the markdown document.
 
+Introduced: 8.0
+
+OS: ios,android,linux,mac,windows
+
+Platforms: mobile,desktop,server
 
 Parameters:
 pMarkdown (string): The markdown text to translate.
