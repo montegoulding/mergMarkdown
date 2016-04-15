@@ -9,3 +9,4 @@ deploy:
   file: binaries/mergMarkdown-x64.so
   on:
     repo: montegoulding/mergMarkdown
+    tags: true
