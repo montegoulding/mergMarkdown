@@ -13,11 +13,11 @@ Version: 1.0.21
 
 Tags: Externals
 
-Name: mergMarkdownToHTML
+Name: mergMarkdownToXHTML
 
 Type: function
 
-Syntax: mergMarkdownToHTML(<pMarkdown>, [<pNoIntraEmphasis>, <pTable>, <pFencedCode>, <pAutoLink>, <pStrikethrough>, <pSpaceHeaders>, <pSuperscript>, <pLaxSpacing>])
+Syntax: mergMarkdownToXHTML(<pMarkdown>, [<pNoIntraEmphasis>, <pTable>, <pFencedCode>, <pAutoLink>, <pStrikethrough>, <pSpaceHeaders>, <pSuperscript>, <pLaxSpacing>])
 
 Summary:  Returns the XHTML translation of the markdown document.
 
@@ -45,4 +45,4 @@ space between a paragraph and a list.
 Returns:  XHTML
 
 Example:
-put mergMarkdownToHTML(theMarkdownText,,true) into theHTML
+put mergMarkdownToXHTML(theMarkdownText,,true) into theHTML
