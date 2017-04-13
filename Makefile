@@ -10,6 +10,3 @@ $(NAME)-x86.so: $(NAME)/$(NAME).c $(EXTERNAL) $(FILES)
 
 $(NAME)-x64.so: $(NAME)/$(NAME).c $(EXTERNAL) $(FILES)
 	gcc -fPIC -m64 -O $(HEADERS) -L.-D_LINUX -D_RELEASE -DNDEBUG -DRELEASE -Xlinker -no-undefined -fno-exceptions -Wl,-Bstatic -Wl,-Bdynamic -shared $(NAME)/$(NAME).c $(EXTERNAL) $(FILES) -o binaries/$(NAME)-x64.so
-
-$(NAME).dll: $(NAME)/$(NAME).c $(EXTERNAL) $(SUNDOWN) $(HTML)
-	gcc -m32 $(HEADERS) -D_WIN32 -D_RELEASE -DNDEBUG -DRELEASE -Xlinker -no-undefined -fno-exceptions -Wl,-Bstatic -Wl,-Bdynamic -static -shared $(NAME)/$(NAME).c $(EXTERNAL) $(FILES) -o binaries/$(NAME).dll
