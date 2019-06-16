@@ -29,3 +29,9 @@ buildlog.txt
 *.dll
 *.xccheckout
 *.so
+*.vcxproj.filters
+*.vcxproj.user
+*.VC.*
+.vs/
+Debug/
+x64/
