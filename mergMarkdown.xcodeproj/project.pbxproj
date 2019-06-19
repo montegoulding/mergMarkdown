@@ -30,7 +30,6 @@
 		B22698DE176C1C0B00F9A4BB /* markdown.c in Sources */ = {isa = PBXBuildFile; fileRef = B20CAAD016FE5FA200117A54 /* markdown.c */; };
 		B22698DF176C1C0B00F9A4BB /* stack.c in Sources */ = {isa = PBXBuildFile; fileRef = B20CAAD116FE5FA200117A54 /* stack.c */; };
 		B243C451172AABDE0068EC91 /* external.c in Sources */ = {isa = PBXBuildFile; fileRef = B243C450172AABDE0068EC91 /* external.c */; };
-		B2895C6F1BE8BE3F0009CC81 /* Global.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B2895C6E1BE8BE3F0009CC81 /* Global.xcconfig */; };
 		B2B46617176EE9A2008B07AB /* external.c in Sources */ = {isa = PBXBuildFile; fileRef = B243C450172AABDE0068EC91 /* external.c */; };
 		B2B46618176EE9A2008B07AB /* houdini_href_e.c in Sources */ = {isa = PBXBuildFile; fileRef = B20CAAD616FE5FBF00117A54 /* houdini_href_e.c */; };
 		B2B46619176EE9A2008B07AB /* houdini_html_e.c in Sources */ = {isa = PBXBuildFile; fileRef = B20CAAD716FE5FBF00117A54 /* houdini_html_e.c */; };
@@ -73,7 +72,7 @@
 		B22698C8176C18A600F9A4BB /* libmergMarkdown.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libmergMarkdown.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B22698C9176C18A600F9A4BB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B243C450172AABDE0068EC91 /* external.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = external.c; path = external/external.c; sourceTree = "<group>"; };
-		B2895C6E1BE8BE3F0009CC81 /* Global.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Global.xcconfig; path = ../Global.xcconfig; sourceTree = "<group>"; };
+		B26FFBD922B705ED004A9568 /* Global.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Global.xcconfig; sourceTree = "<group>"; };
 		B2B46612176EE8E9008B07AB /* mergMarkdown.dylib */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = mergMarkdown.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -107,7 +106,7 @@
 		B20CAAB016FE5B4200117A54 = {
 			isa = PBXGroup;
 			children = (
-				B2895C6E1BE8BE3F0009CC81 /* Global.xcconfig */,
+				B26FFBD922B705ED004A9568 /* Global.xcconfig */,
 				B20CAAC016FE5B4200117A54 /* mergMarkdown */,
 				B20CAABD16FE5B4200117A54 /* Frameworks */,
 				B20CAABC16FE5B4200117A54 /* Products */,
@@ -262,7 +261,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B20CAAC516FE5B4200117A54 /* InfoPlist.strings in Resources */,
-				B2895C6F1BE8BE3F0009CC81 /* Global.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,7 +376,6 @@
 /* Begin XCBuildConfiguration section */
 		B20CAAC716FE5B4200117A54 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B2895C6E1BE8BE3F0009CC81 /* Global.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
@@ -412,7 +409,6 @@
 		};
 		B20CAAC816FE5B4200117A54 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B2895C6E1BE8BE3F0009CC81 /* Global.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
@@ -477,6 +473,7 @@
 		};
 		B22698D2176C18A700F9A4BB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B26FFBD922B705ED004A9568 /* Global.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = armv7;
@@ -496,6 +493,7 @@
 		};
 		B22698D3176C18A700F9A4BB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B26FFBD922B705ED004A9568 /* Global.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = armv7;
